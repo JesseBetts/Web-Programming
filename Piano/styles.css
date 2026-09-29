@@ -1,0 +1,21 @@
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav{
+    
+}
+
+
+.menu-items {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.menu-items>div {
+    flex: 1;
+    text-align: center;
+}
