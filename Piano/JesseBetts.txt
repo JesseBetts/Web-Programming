@@ -1,0 +1,7 @@
+Jesse Betts 9/28/2026
+
+I am making a website to track my piano practice as I learn. I have multiple web pages where I will have a sheet music repository, scale practices, and video place to have videos of me from day one until I am a concert pianist. That's 4 pages total. I might add more, but I hope I don't need to. This is something I will hopefully use and I want to make it good. This is a very rough outline of my future website I have a rough draft of it on figma.
+
+P.S.
+I only have the index file outlined for now. Once I learn PHP I will use it for the navbar.
+
