@@ -21,17 +21,17 @@
 </head>
 <body>
     <form>
-        <input type="hidden">
+        <input type="hidden" id="programmer" name="programmer" value="Jesse Betts">
         <p>SUU Checklist:</p>
-        <label>I completed registration<input type="checkbox"> </label>
+        <label>I completed registration<input type="checkbox" id="completedReg" name="completedReg"> </label>
         <br>
-        <label>I found my dorm room<input type="checkbox"> </label>
+        <label>I found my dorm room<input type="checkbox" id="foundDorm" name="foundDorm"> </label>
         <br>
-        <label>I found the cafeteria<input type="checkbox"> </label>
+        <label>I found the cafeteria<input type="checkbox" id="foundCafeteria" name="foundCafeteria"> </label>
         <br>
-        <label>I made a friend<input type="checkbox"> </label>
+        <label>I made a friend<input type="checkbox" id="madeFriend" name="madeFriend"> </label>
         <br>
-        <label>I paid my tuition<input type="checkbox"> </label>
+        <label>I paid my tuition<input type="checkbox" id="paidTuition" name="paidTuition"> </label>
         <br>
         I have selected the following degree<br>
         <input type="radio" name="degree" id="CS" value="CS">
@@ -49,8 +49,9 @@
         <input type="radio" name="degree" id="NotListed" value="NotListed">
         <label for="NotListed">My degree is not listed</label><br>
         <label>My Hogwarts House is:
-        <select>
-            <option>TODO for the Hogwarts House</option>
+        <select id="hogwartsHouse" name="hogwartsHouse">
+        <!-- See javascript for options :) -->
+         <option value="" disabled selected>Select your house!</option>
         </select>
         </label>
         <br>
@@ -73,7 +74,7 @@
         A character not listed
 
         <br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" formaction="AttendingSUUEvenMore.html">
         <br>
         <input type="reset" value="Reset">
         <br>
@@ -81,5 +82,6 @@
 
     <input type="text" value="Completion Score: 0" disabled>
 
+    <script src="suu.js"></script>
 </body>
 </html>
