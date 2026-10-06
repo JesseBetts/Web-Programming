@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Attending SUU</title>
+    <style>
+        /* Internal CSS  */
+
+        /* SUU COLORS */
+        :root {
+            --suu-red: #DB0000;
+            --suu-black: #000000;
+            --suu-gray: #E7E7E7;
+        }
+
+        h1 {
+            color: var(--suu-red);
+            font-size: 50px;
+            text-align: center;
+        }
+
+        div {
+            color: blue;
+            font-size: 25px;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        body {
+            background-color: var(--suu-gray);
+        }
+
+        label {
+            color: var(--suu-black);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Javascript Website</h1>
+    <form action="AttendingSUUMoreInfo.html" method="GET">
+        <label>First Name<input type="text" id="firstName" name="firstName"> </label>
+        <br>
+        <label>Last Name<input type="text" id="lastName" name="lastName"> </label>
+        <br>
+        <label>Move in Date<input type="date" id="moveInDate" name="moveInDate"> </label>
+        <br>
+        <label>Which major are you planing on selecting?
+            <select id="majorSelect" name="majorSelect">
+                <option selected="selected">TODO for the majors</option>
+            </select>
+        </label>
+        <br>
+        <input type="submit" value="Submit">
+        <br>
+        <input type="reset" value="Reset">
+        <br>
+        <input type="button" id="random" value="Random Student">
+    </form>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
