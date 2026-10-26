@@ -58,6 +58,36 @@
     </footer>
 
     <script>
+    const practiceItems = document.querySelectorAll('.practice-item');
+
+    practiceItems.forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const existingPdf = this.querySelector('.inline-pdf-viewer');
+            if (existingPdf) {
+                existingPdf.remove(); 
+                return;
+            }
+
+            const pdfUrl = this.querySelector('a').getAttribute('href');
+
+            const pdfContainer = document.createElement('div');
+            pdfContainer.className = 'inline-pdf-viewer';
+            pdfContainer.style.marginTop = '15px';
+            pdfContainer.style.width = '100%';
+            
+            const iframe = document.createElement('iframe');
+            iframe.src = pdfUrl;
+            iframe.style.width = '100%';
+            iframe.style.height = '500px';
+            iframe.style.border = '1px solid #ccc';
+            iframe.style.borderRadius = '8px';
+
+            pdfContainer.appendChild(iframe);
+            this.appendChild(pdfContainer);
+        });
+    });
     </script>
 
 </body>
